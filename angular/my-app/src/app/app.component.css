@@ -1,0 +1,22 @@
+/* Imposta una larghezza massima per il container */
+.container {
+    max-width: 960px;
+  }
+  
+  /* Aggiunge spazio tra le card */
+  .card {
+    margin-bottom: 20px;
+  }
+  
+  /* Rende i bottoni full-width */
+  .btn-block {
+    width: 100%;
+  }
+  
+  /* Stile per il footer */
+  footer {
+    margin-top: 40px;
+    color: #777;
+    font-size: 0.9rem;
+  }
+  

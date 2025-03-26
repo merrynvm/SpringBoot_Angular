@@ -1,0 +1,3 @@
+          "options": {
+            "proxyConfig": "proxy.conf.json"
+          },

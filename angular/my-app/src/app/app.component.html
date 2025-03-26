@@ -1,0 +1,62 @@
+<div class="container my-5">
+  <h1 class="text-center mb-4">Angular + Backend Spring Boot</h1>
+  
+  <div class="row">
+    <!-- Card per /api/hello -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-primary text-white">
+          /api/hello
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{ helloMessage }}</p>
+          <button class="btn btn-outline-primary btn-block" (click)="callHello()">
+            Richiedi Saluto
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card per /api/greet -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-success text-white">
+          /api/greet
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="greetName">Nome:</label>
+            <input type="text" id="greetName" [(ngModel)]="greetName" class="form-control" placeholder="Es. Marco">
+          </div>
+          <p class="card-text">{{ greetMessage }}</p>
+          <button class="btn btn-outline-success btn-block" (click)="callGreet()">
+            Richiedi Saluto Personalizzato
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Card per /api/welcome -->
+    <div class="col-md-4">
+      <div class="card shadow-sm">
+        <div class="card-header bg-info text-white">
+          /api/welcome
+        </div>
+        <div class="card-body">
+          <div class="form-group">
+            <label for="welcomeName">Nome (opzionale):</label>
+            <input type="text" id="welcomeName" [(ngModel)]="welcomeName" class="form-control" placeholder="Es. Luca">
+          </div>
+          <p class="card-text">{{ welcomeMessage }}</p>
+          <button class="btn btn-outline-info btn-block" (click)="callWelcome()">
+            Richiedi Messaggio di Benvenuto
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="mt-5 text-center">
+    <p>&copy; Merry</p>
+  </footer>
+</div>
